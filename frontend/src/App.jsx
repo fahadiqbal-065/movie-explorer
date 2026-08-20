@@ -3,7 +3,8 @@ import MovieCard from "./components/MovieCard";
 import MovieDetails from "./components/MovieDetails";
 import "./App.css";
 
-const API_URL = "http://localhost:5000/api/movies";
+const API_URL =
+  import.meta.env.VITE_API_URL || "http://localhost:5000/api/movies";
 const FAVORITES_KEY = "movie-explorer-favorites";
 
 function App() {
